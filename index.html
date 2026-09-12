@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velocity Engine — Build 2D &amp; 3D games at parkour speed</title>
+<meta name="description" content="Velocity Engine: a project-driven C++ game engine with a Hub launcher, 2D and 3D templates, Jolt physics, a parkour movement toolkit and local accounts. Download for Windows.">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='12' y='12' width='76' height='76' rx='16' fill='%2362f0a6'/%3E%3Cpath d='M30 72V28l40 44V28' stroke='%2307131f' stroke-width='10' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark"><svg viewBox="0 0 100 100"><rect x="12" y="12" width="76" height="76" rx="16" fill="currentColor"/><path d="M30 72V28l40 44V28" stroke="#07131f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
+      <span>Velocity Engine</span>
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#templates">Templates</a>
+      <a href="#hub">Hub</a>
+      <a href="#installs">Installs</a>
+      <a href="#download" class="nav-download">Download</a>
+    </div>
+  </div>
+</nav>
+
+<header id="top" class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">C++20 &middot; Jolt Physics &middot; Direct3D 11</p>
+    <h1>Build 2D &amp; 3D games<br><span class="accent">at parkour speed.</span></h1>
+    <p class="hero-sub">
+      Velocity Engine is a project-driven game engine with a Unity-style Hub,
+      game templates, Jolt rigid-body physics, a deterministic 120&nbsp;Hz parkour
+      movement toolkit and local accounts — ready to open, create and run.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="downloads/VelocityEngine-windows-x64-v0.1.0.zip" download>Download for Windows</a>
+      <a class="btn btn-ghost" href="#features">See what you can do</a>
+    </div>
+    <p class="hero-note">v0.1.0 · Windows x64 · ~25 MB · hub, editor &amp; demo included</p>
+  </div>
+</header>
+
+<section class="stats">
+  <div class="stats-inner">
+    <div><strong>120&nbsp;Hz</strong><span>deterministic fixed-step sim</span></div>
+    <div><strong>5</strong><span>game templates (2D &amp; 3D)</span></div>
+    <div><strong>39</strong><span>unit test suites, all green</span></div>
+    <div><strong>1</strong><span>hub launcher in the download</span></div>
+  </div>
+</section>
+
+<main>
+
+<section id="features" class="section">
+  <div class="section-inner">
+    <h2>What you can do with it</h2>
+    <p class="section-sub">A real engine loop: launch the Hub, create an account, pick a template, open it in the editor and play the demo — all from one build.</p>
+    <div class="grid cards">
+      <article class="card">
+        <div class="card-ico">&#8962;</div>
+        <h3>Unity-style Hub</h3>
+        <p>Sign in or create an account, then manage <strong>Projects</strong>, <strong>Templates</strong> and <strong>Installs</strong> from one launcher. Open any project directly in the editor.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">&#9650;</div>
+        <h3>2D &amp; 3D templates</h3>
+        <p>Start from <em>Blank 2D</em>, <em>Blank 3D</em>, <em>2D Platformer</em>, <em>3D First-Person</em> or the <em>Parkour 3D</em> sample. Each seeds a runnable level with one click.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">&#9678;</div>
+        <h3>Jolt physics</h3>
+        <p>Rigid bodies, ray casts, ground probes and a kinematic character capsule. Drop physics balls, tune gravity and watch everything bounce in the editor.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">&#9889;</div>
+        <h3>Parkour movement toolkit</h3>
+        <p>Deterministic 120&nbsp;Hz movement: sprint curves, variable hold-jump, coyote time, jump buffering, kerb auto-step and ground snap — all data-driven.</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">&#9881;</div>
+        <h3>Live tuning editor</h3>
+        <p>Tweak movement and physics sliders while the run plays, then persist your options straight into the project (<span class="mono">project.json</span>).</p>
+      </article>
+      <article class="card">
+        <div class="card-ico">&#128274;</div>
+        <h3>Local accounts</h3>
+        <p>Create an account in the Hub. Passwords are hashed with PBKDF2-HMAC-SHA256 and projects are owned per user — cloud sync is on the roadmap.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="templates" class="section alt">
+  <div class="section-inner">
+    <h2>Game templates</h2>
+    <p class="section-sub">Every template ships a working level and its own movement tuning. Create a project from any of them in the Hub with one click.</p>
+    <div class="grid tpl-grid">
+      <article class="tpl">
+        <span class="tpl-badge">2D</span>
+        <h3>Blank 2D</h3>
+        <p>Empty 2D world with an orthographic camera.</p>
+      </article>
+      <article class="tpl">
+        <span class="tpl-badge">3D</span>
+        <h3>Blank 3D</h3>
+        <p>Empty 3D world with a ground plane for FPS/TPS ideas.</p>
+      </article>
+      <article class="tpl">
+        <span class="tpl-badge">2D</span>
+        <h3>2D Platformer</h3>
+        <p>Side-scrolling lane with platforms and an auto-step kerb.</p>
+      </article>
+      <article class="tpl">
+        <span class="tpl-badge">3D</span>
+        <h3>3D First-Person</h3>
+        <p>Sprint-tuned first-person movement and an obstacle loop.</p>
+      </article>
+      <article class="tpl featured">
+        <span class="tpl-badge">3D</span>
+        <h3>Parkour 3D · sample</h3>
+        <p>The bundled demo course: sprint, auto-step a kerb, jump a tall box.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="hub" class="section">
+  <div class="section-inner">
+    <h2>The Hub — your command center</h2>
+    <p class="section-sub">Launch it first. Sign in (or create an account) and you land in a workspace with three tabs on the side.</p>
+    <div class="hub-row">
+      <div class="hub-panel">
+        <div class="hub-tab"><span class="tab-dot"></span>Projects</div>
+        <div>
+          <div class="hub-line"><span class="hub-name">Velocity Smoke</span><span class="hub-meta">3d · parkour3d · you</span></div>
+          <div class="hub-line"><span class="hub-name">My Platformer</span><span class="hub-meta">2d · platformer2d · you</span></div>
+        </div>
+        <div class="hub-actions"><span class="btn mini">+ new project</span></div>
+      </div>
+      <div class="hub-panel">
+        <div class="hub-tab"><span class="tab-dot"></span>Templates</div>
+        <div class="hub-line">
+          <div class="chip-row"><span class="chip">Blank 2D</span><span class="chip">Blank 3D</span><span class="chip">Parkour 3D</span><span class="chip">2D Platformer</span><span class="chip">FPS 3D</span></div>
+        </div>
+        <div class="hub-actions"><span class="btn mini">use template</span></div>
+      </div>
+      <div class="hub-panel">
+        <div class="hub-tab"><span class="tab-dot"></span>Installs</div>
+        <div class="hub-line"><span class="hub-status on">physics</span><span>bundled</span></div>
+        <div class="hub-line"><span class="hub-status on">parkour</span><span>bundled</span></div>
+        <div class="hub-line"><span class="hub-status off">android / ios / vr</span><span>planned</span></div>
+      </div>
+    </div>
+    <p class="section-sub center">One launcher for creating, continuing, templating and installing — inspired by the big engines, built to be fast.</p>
+  </div>
+</section>
+
+<section id="installs" class="section alt">
+  <div class="section-inner">
+    <h2>Installable modules</h2>
+    <p class="section-sub">The Installs tab manages the module registry for the build you downloaded. Physics and the parkour toolkit are already bundled.</p>
+    <div class="grid mod-grid">
+      <div class="mod mod-on"><span class="mod-name">Physics (Jolt)</span><span class="mod-badge on">bundled</span><p>Rigid-body dynamics, ray casts, character capsules, ground probes.</p></div>
+      <div class="mod mod-on"><span class="mod-name">Parkour Toolkit</span><span class="mod-badge on">bundled</span><p>Deterministic movement, kerb auto-step, reviewer stats.</p></div>
+      <div class="mod"><span class="mod-name">Android Builds</span><span class="mod-badge">planned</span><p>Export projects to APK / AAB via Android SDK + Gradle.</p></div>
+      <div class="mod"><span class="mod-name">iOS Builds</span><span class="mod-badge">planned</span><p>iOS / iPadOS exports with Xcode signing.</p></div>
+      <div class="mod"><span class="mod-name">VR / XR</span><span class="mod-badge">planned</span><p>OpenXR headsets: PC VR and Quest rigs with motion controllers.</p></div>
+      <div class="mod"><span class="mod-name">Web (Wasm)</span><span class="mod-badge">planned</span><p>Browser builds via WebAssembly and Emscripten.</p></div>
+      <div class="mod"><span class="mod-name">Netcode</span><span class="mod-badge">planned</span><p>Client-server replication and rollback for competitive play.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="section download">
+  <div class="section-inner">
+    <div class="download-box">
+      <p class="eyebrow">v0.1.0 · Windows x64</p>
+      <h2>Download the engine</h2>
+      <p>
+        One zip with everything: the <span class="mono">velocity-hub</span>
+        launcher, game templates, data and docs. Unzip and double-click
+        <span class="mono">velocity-hub.exe</span> — create an account, pick a
+        template and make a project. The editor and demo aren't bundled; build
+        them from source, or grab them as optional modules once the
+        <span class="mono">Installs</span> tab ships remote module downloads.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary big" id="download-btn" href="downloads/VelocityEngine-windows-x64-v0.1.0.zip" download>
+          &#8681;&nbsp; Download Velocity Engine
+        </a>
+      </div>
+      <p class="hero-note" id="dl-meta">Windows 10/11 x64 · Direct3D 11 · ~4 MB zip</p>
+      <div class="req-row">
+        <div><strong>Quick start</strong><span>Unzip → run velocity-hub.exe → create an account → pick Parkour 3D → play</span></div>
+        <div><strong>Requirements</strong><span>Windows 10/11 64-bit · DirectX 11 GPU · 2 GB free disk</span></div>
+      </div>
+      <div class="req-row">
+        <div><strong>Build from source</strong><span>CMake 3.31+ · Ninja · MSVC (VS2022/2026) — <span class="mono">scripts\build.bat</span></span></div>
+        <div><strong>Coming soon</strong><span>Android · iOS · VR · Web · netcode modules, macOS/Linux builds</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="brand small"><span class="brand-mark"><svg viewBox="0 0 100 100"><rect x="12" y="12" width="76" height="76" rx="16" fill="currentColor"/><path d="M30 72V28l40 44V28" stroke="#07131f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>Velocity Engine</div>
+    <p>An open source passion project. Deterministic movement, honest physics, one-click projects.</p>
+    <p class="mini">Docs: <a href="../README.md">README</a> · <a href="../ARCHITECTURE.md">Architecture</a> · <a href="../ACCEPTANCE.md">Acceptance</a> · <a href="../DEVELOPMENT_STATUS.md">Status</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
